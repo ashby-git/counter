@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/counter-display/counter-display.component';
 
 function App() {
   return (
