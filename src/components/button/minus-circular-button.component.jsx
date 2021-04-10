@@ -6,8 +6,8 @@ import './circular-button.styles.scss';
 
 const MinusCircularButton = (props) => (
 
-    <CircularButton>
-        <i class="fas fa-minus"></i>
+    <CircularButton onClick={props.onClick}>
+        <i className="fas fa-minus"></i>
     </CircularButton>
 
 )
