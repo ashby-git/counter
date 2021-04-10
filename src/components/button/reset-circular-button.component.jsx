@@ -4,12 +4,12 @@ import CircularButton from './circular-button.component'
 
 import './circular-button.styles.scss';
 
-const RefreshCircularButton = (props) => (
+const ResetCircularButton = (props) => (
 
-    <CircularButton className='button'>
+    <CircularButton>
         <i class="fas fa-sync-alt"></i>
     </CircularButton>
 
 )
 
-export default RefreshCircularButton;
+export default ResetCircularButton;
