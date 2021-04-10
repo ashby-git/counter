@@ -1,0 +1,28 @@
+.button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  text-align: center;
+
+  padding-top: 5px;
+ 
+  border-radius: 100%;
+  width: 100px;
+  height:95px;
+
+  background: #555555;
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.button-text {
+font-family: monospace;
+}
