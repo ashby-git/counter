@@ -35,7 +35,6 @@ class Homepage extends Component {
         return (
             <div>
                 <CounterDisplay count={this.state.counter} />
-
                 <PlusCircularButton onClick={this.plus} />
                 <MinusCircularButton onClick={this.minus} />
                 <ResetCircularButton onClick={this.reset} />
