@@ -11,34 +11,25 @@ class Homepage extends Component {
         this.state = {
             counter: 0
         };
-        this.plus = this.plus.bind(this);
-        this.minus = this.minus.bind(this);
-        this.reset = this.reset.bind(this);
     }
 
-    plus() {
-        this.setState((state) => {
-            return {
-                counter: state.counter + 1
-            };
-        });
-    }
+    plus = () => this.setState((state) => {
+        return {
+            counter: state.counter + 1
+        };
+    });
 
-    minus() {
-        this.setState((state) => {
-            return {
-                counter: state.counter - 1
-            };
-        });
-    }
+    minus = () => this.setState((state) => {
+        return {
+            counter: state.counter - 1
+        };
+    });
 
-    reset() {
-        this.setState((state) => {
-            return {
-                counter: 0
-            };
-        });
-    }
+    reset = () => this.setState(() => {
+        return {
+            counter: 0
+        };
+    });
 
     render() {
         return (
