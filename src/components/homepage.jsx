@@ -1,15 +1,9 @@
-// import React from 'react';
 import MinusCircularButton from './button/minus-circular-button.component';
 import PlusCircularButton from './button/plus-circular-button.component';
 import ResetCircularButton from './button/reset-circular-button.component';
 import CounterDisplay from './counter-display/counter-display.component';
 
-
-
-
-
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 
 class Homepage extends Component {
     constructor(props) {
@@ -60,30 +54,3 @@ class Homepage extends Component {
 }
 
 export default Homepage;
-
-
-
-
-
-
-
-
-
-
-
-
-// const Homepage = (props) => {
-
-//     return (
-
-//         <div>
-//             <CounterDisplay count='0' />
-
-//             <PlusCircularButton onClick={} />
-//             <MinusCircularButton />
-//             <ResetCircularButton />
-//         </div>
-//     );
-// };
-
-// export default Homepage;
