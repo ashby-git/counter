@@ -1,5 +1,6 @@
 import './App.css';
 import './components/counter-display/counter-display.component';
+import Homepage from './components/homepage';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         Counter
       </header>
       <div>
+        <Homepage />
       </div>
     </div>
   );

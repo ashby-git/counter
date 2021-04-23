@@ -6,8 +6,8 @@ import './circular-button.styles.scss';
 
 const ResetCircularButton = (props) => (
 
-    <CircularButton>
-        <i class="fas fa-sync-alt"></i>
+    <CircularButton onClick={props.onClick}>
+        <i className="fas fa-sync-alt"></i>
     </CircularButton>
 
 )
