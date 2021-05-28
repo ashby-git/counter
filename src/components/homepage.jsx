@@ -20,9 +20,10 @@ class Homepage extends Component {
     });
 
     minus = () => this.setState((state) => {
+       if (state.counter > 0) {
         return {
-            counter: state.counter - 1
-        };
+			counter: state.counter - 1  
+        };}
     });
 
     reset = () => this.setState(() => {
