@@ -3,6 +3,8 @@ import PlusCircularButton from './button/plus-circular-button.component';
 import ResetCircularButton from './button/reset-circular-button.component';
 import CounterDisplay from './counter-display/counter-display.component';
 
+import './homepage.styles.scss';
+
 import React, { Component } from "react";
 
 class Homepage extends Component {
@@ -20,10 +22,11 @@ class Homepage extends Component {
     });
 
     minus = () => this.setState((state) => {
-       if (state.counter > 0) {
-        return {
-			counter: state.counter - 1  
-        };}
+        if (state.counter > 0) {
+            return {
+                counter: state.counter - 1
+            };
+        }
     });
 
     reset = () => this.setState(() => {
@@ -36,9 +39,11 @@ class Homepage extends Component {
         return (
             <div>
                 <CounterDisplay count={this.state.counter} />
-                <PlusCircularButton onClick={this.plus} />
-                <MinusCircularButton onClick={this.minus} />
-                <ResetCircularButton onClick={this.reset} />
+                <div className="buttonContainer" >
+                    <PlusCircularButton className="button" onClick={this.plus} />
+                    <MinusCircularButton onClick={this.minus} />
+                    <ResetCircularButton onClick={this.reset} />
+                </div>
             </div>
         );
     }
