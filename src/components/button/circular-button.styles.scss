@@ -21,6 +21,12 @@
   text-decoration: none;
   cursor: pointer;
 
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+
 }
 
 .button-text {
